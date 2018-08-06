@@ -5,7 +5,7 @@ Passwords are stored in a secure form, in-memory database used.
 
 1) Add a user:
 
-    (GET) http://localhost:8080/newUser
+    (POST) http://localhost:8080/newUser
 
     the request body must contain: email, name, secondName, password and birthday.
     
