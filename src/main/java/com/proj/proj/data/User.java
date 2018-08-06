@@ -1,5 +1,6 @@
 package com.proj.proj.data;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.io.Serializable;
@@ -8,6 +9,7 @@ import java.util.Date;
 public class User implements Serializable {
     private String name;
     private String secondName;
+    @JsonFormat(pattern="dd-MM-yyyy", timezone = "Europe/Moscow")
     private Date birthday;
     private String email;
 
